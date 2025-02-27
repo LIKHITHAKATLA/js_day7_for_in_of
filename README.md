@@ -1,0 +1,1 @@
+# js_day7_for_in_of
