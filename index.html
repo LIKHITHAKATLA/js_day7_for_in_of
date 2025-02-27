@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //reverse of a string
+        str = "hello"
+        reverse = ""
+        for (i of str){
+            reverse = i + reverse
+        }
+        console.log(reverse)
+//even numbers
+        arr = [23,54,67,64,46,95,98]
+        for (i of arr){
+            if(i % 2 == 0){
+            console.log(i)
+           }
+        }
+        //max value
+        str = "258309"
+        max = str[0]
+        for (i in str){
+            if(max < str[i]){
+                max = str[i]
+            }
+        }
+        console.log("max value =",max)
+        console.log("max value at index=",i)
+//prime number from 2 t0 50
+        for(let i=2;i<=50;i++){
+            let flag = true;
+            for(let j=2;j<i;j++){
+                if(i % j == 0){
+                    flag = false;
+                    break;
+                }
+            }
+            if(flag){
+                console.log(i,"prime")
+            }
+            else
+            { 
+                console.log(i,"not prime")
+            }
+        }
+    </script>
+</body>
+</html>
